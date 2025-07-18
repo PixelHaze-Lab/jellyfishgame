@@ -1,0 +1,36 @@
+<html>
+	<head>
+		<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Shoot the Jellyfish</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="engine.js"></script>
+</head>
+<body>
+    <div id="gameWindow">
+    
+        <div id="introScreen"> 
+            <div id="introScreenContent"> 
+                <h1>Shoot the jellyfish</h1>
+                <div id="btnStart" class="button" onclick="startGame()">Start Game</div>
+            </div>
+        </div> 
+            
+        <div id="endScreen">
+            <div id="endScreenContent">
+                <h1 id="txtEndTitle">Game Over</h1>
+                <h2 id="txtEndMessage">You lose</h2>
+               <div id="btnReplay" class="button" onclick="replay()">Play Again</div>
+            </div>
+        </div>
+        
+        <img src="jellyfish.png" id="jellyfish" class="jellyfish" onclick="hitJellyfish()">
+        
+        <img src="black_jellyfish.png" id="blackJellyfish" class="jellyfish" onclick="hitBlackJellyfish()">
+    </div>
+  
+    <div id="output" style="color: black; padding: 20px;"></div>
+</body>
+</html>
